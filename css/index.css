@@ -4,6 +4,10 @@ body{
     background-color: #333;
 }
 
+img{
+    max-width: 100%;
+}
+
 article{
     width: 800px;
     margin: 0 auto;
@@ -17,13 +21,14 @@ article>h2{
     margin: 0 auto 25px;
     font-size: 25px;
 }
-article>h2>p{
+article>p{
     width: 780px;
     margin: 0 auto 25px;
     column-count: 3;
     column-rule: 1px solid red;
     line-height: 1.5em;
 }
+article>footer{}
 article>footer>ul{
     width: 600px;
     display: flex;
@@ -34,10 +39,32 @@ article>footer>ul>li{
     margin: 0 auto;
 }
 
+@media screen and (min-width:800px){
+    article{
+        width: 800px;
+    }
+}
+@media screen and (max-width:799px) and (min-width:600px){
 
+}
 
+@media screen and (max-width:599px) and (min-width:400px){
 
+}
 
+@media screen and (max-width:399px){
+    article>p{
+        column-count: 1;
+    }
+    article>footer>ul{
+        width: auto;
+        display: block;
+    }
+    article>footer>ul>li{
+        width: auto;
+        text-align: center;
+    }
+}
 
 
 
